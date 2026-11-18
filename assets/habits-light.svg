@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="278" viewBox="0 0 840 278" role="img" aria-label="Rythme de commit, pic le mercredi vers 16 h">
+<title>Rythme de commit, pic le mercredi vers 16 h</title>
+<defs><clipPath id="card"><rect width="840" height="278" rx="12"/></clipPath></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}
+.m{fill:#59636e}
+.h{font-size:15px;font-weight:600}
+.s{font-size:12px}
+.xs{font-size:11px}
+@keyframes fade{from{opacity:0}}
+@keyframes grow{from{transform:scaleX(0)}}
+@keyframes pop{from{transform:scale(0)}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="839" height="277" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+
+<text x="24" y="36" class="h">Rythme de commit <tspan class="m" style="font-weight:400">· jour × heure (Paris), 12 derniers mois</tspan></text>
+<text x="816" y="36" class="m s" text-anchor="end">pic : le mercredi vers 16 h</text>
+<text x="24" y="79" class="m xs">lun.</text><text x="24" y="105" class="m xs">mar.</text><text x="24" y="131" class="m xs">mer.</text><text x="24" y="157" class="m xs">jeu.</text><text x="24" y="183" class="m xs">ven.</text><text x="24" y="209" class="m xs">sam.</text><text x="24" y="235" class="m xs">dim.</text>
+<circle cx="79.7" cy="75" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 0ms backwards"><title>lundi 0 h : 1 commit</title></circle>
+<circle cx="111.0" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="361.7" cy="75" r="8.1" fill="#8250df" fill-opacity="0.55" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 225ms backwards"><title>lundi 9 h : 49 commits</title></circle>
+<circle cx="393.0" cy="75" r="9.2" fill="#8250df" fill-opacity="0.65" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 250ms backwards"><title>lundi 10 h : 69 commits</title></circle>
+<circle cx="424.3" cy="75" r="9.0" fill="#8250df" fill-opacity="0.63" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 275ms backwards"><title>lundi 11 h : 65 commits</title></circle>
+<circle cx="455.7" cy="75" r="10.1" fill="#8250df" fill-opacity="0.75" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 300ms backwards"><title>lundi 12 h : 90 commits</title></circle>
+<circle cx="487.0" cy="75" r="7.5" fill="#8250df" fill-opacity="0.50" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 325ms backwards"><title>lundi 13 h : 39 commits</title></circle>
+<circle cx="518.3" cy="75" r="9.3" fill="#8250df" fill-opacity="0.66" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 350ms backwards"><title>lundi 14 h : 72 commits</title></circle>
+<circle cx="549.7" cy="75" r="8.7" fill="#8250df" fill-opacity="0.60" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 375ms backwards"><title>lundi 15 h : 60 commits</title></circle>
+<circle cx="581.0" cy="75" r="9.5" fill="#8250df" fill-opacity="0.68" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 400ms backwards"><title>lundi 16 h : 75 commits</title></circle>
+<circle cx="612.3" cy="75" r="10.3" fill="#8250df" fill-opacity="0.77" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 425ms backwards"><title>lundi 17 h : 94 commits</title></circle>
+<circle cx="643.7" cy="75" r="5.6" fill="#8250df" fill-opacity="0.38" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 450ms backwards"><title>lundi 18 h : 15 commits</title></circle>
+<circle cx="675.0" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="706.3" cy="75" r="3.9" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 500ms backwards"><title>lundi 20 h : 3 commits</title></circle>
+<circle cx="737.7" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="769.0" cy="75" r="1.5" fill="#d1d9e0"/>
+<circle cx="800.3" cy="75" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 575ms backwards"><title>lundi 23 h : 1 commit</title></circle>
+<circle cx="79.7" cy="101" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 15ms backwards"><title>mardi 0 h : 1 commit</title></circle>
+<circle cx="111.0" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="101" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="101" r="3.6" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 215ms backwards"><title>mardi 8 h : 2 commits</title></circle>
+<circle cx="361.7" cy="101" r="8.8" fill="#8250df" fill-opacity="0.61" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 240ms backwards"><title>mardi 9 h : 61 commits</title></circle>
+<circle cx="393.0" cy="101" r="9.3" fill="#8250df" fill-opacity="0.66" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 265ms backwards"><title>mardi 10 h : 72 commits</title></circle>
+<circle cx="424.3" cy="101" r="10.0" fill="#8250df" fill-opacity="0.74" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 290ms backwards"><title>mardi 11 h : 87 commits</title></circle>
+<circle cx="455.7" cy="101" r="8.8" fill="#8250df" fill-opacity="0.61" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 315ms backwards"><title>mardi 12 h : 62 commits</title></circle>
+<circle cx="487.0" cy="101" r="6.9" fill="#8250df" fill-opacity="0.45" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 340ms backwards"><title>mardi 13 h : 30 commits</title></circle>
+<circle cx="518.3" cy="101" r="9.6" fill="#8250df" fill-opacity="0.69" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 365ms backwards"><title>mardi 14 h : 77 commits</title></circle>
+<circle cx="549.7" cy="101" r="9.5" fill="#8250df" fill-opacity="0.68" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 390ms backwards"><title>mardi 15 h : 75 commits</title></circle>
+<circle cx="581.0" cy="101" r="11.2" fill="#8250df" fill-opacity="0.89" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 415ms backwards"><title>mardi 16 h : 117 commits</title></circle>
+<circle cx="612.3" cy="101" r="10.8" fill="#8250df" fill-opacity="0.83" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 440ms backwards"><title>mardi 17 h : 106 commits</title></circle>
+<circle cx="643.7" cy="101" r="7.5" fill="#8250df" fill-opacity="0.49" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 465ms backwards"><title>mardi 18 h : 38 commits</title></circle>
+<circle cx="675.0" cy="101" r="6.4" fill="#8250df" fill-opacity="0.42" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 490ms backwards"><title>mardi 19 h : 24 commits</title></circle>
+<circle cx="706.3" cy="101" r="6.4" fill="#8250df" fill-opacity="0.42" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 515ms backwards"><title>mardi 20 h : 23 commits</title></circle>
+<circle cx="737.7" cy="101" r="5.8" fill="#8250df" fill-opacity="0.39" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 540ms backwards"><title>mardi 21 h : 17 commits</title></circle>
+<circle cx="769.0" cy="101" r="5.7" fill="#8250df" fill-opacity="0.38" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 565ms backwards"><title>mardi 22 h : 16 commits</title></circle>
+<circle cx="800.3" cy="101" r="3.9" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 590ms backwards"><title>mardi 23 h : 3 commits</title></circle>
+<circle cx="79.7" cy="127" r="4.1" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 30ms backwards"><title>mercredi 0 h : 4 commits</title></circle>
+<circle cx="111.0" cy="127" r="5.5" fill="#8250df" fill-opacity="0.37" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 55ms backwards"><title>mercredi 1 h : 14 commits</title></circle>
+<circle cx="142.3" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="127" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="127" r="4.1" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 230ms backwards"><title>mercredi 8 h : 4 commits</title></circle>
+<circle cx="361.7" cy="127" r="9.4" fill="#8250df" fill-opacity="0.67" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 255ms backwards"><title>mercredi 9 h : 73 commits</title></circle>
+<circle cx="393.0" cy="127" r="12.0" fill="#8250df" fill-opacity="1.00" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 280ms backwards"><title>mercredi 10 h : 139 commits</title></circle>
+<circle cx="424.3" cy="127" r="11.9" fill="#8250df" fill-opacity="0.98" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 305ms backwards"><title>mercredi 11 h : 135 commits</title></circle>
+<circle cx="455.7" cy="127" r="9.8" fill="#8250df" fill-opacity="0.72" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 330ms backwards"><title>mercredi 12 h : 83 commits</title></circle>
+<circle cx="487.0" cy="127" r="7.6" fill="#8250df" fill-opacity="0.50" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 355ms backwards"><title>mercredi 13 h : 40 commits</title></circle>
+<circle cx="518.3" cy="127" r="10.4" fill="#8250df" fill-opacity="0.79" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 380ms backwards"><title>mercredi 14 h : 97 commits</title></circle>
+<circle cx="549.7" cy="127" r="10.6" fill="#8250df" fill-opacity="0.81" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 405ms backwards"><title>mercredi 15 h : 102 commits</title></circle>
+<circle cx="581.0" cy="127" r="10.4" fill="#8250df" fill-opacity="0.78" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 430ms backwards"><title>mercredi 16 h : 96 commits</title></circle>
+<circle cx="612.3" cy="127" r="10.4" fill="#8250df" fill-opacity="0.78" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 455ms backwards"><title>mercredi 17 h : 96 commits</title></circle>
+<circle cx="643.7" cy="127" r="6.1" fill="#8250df" fill-opacity="0.40" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 480ms backwards"><title>mercredi 18 h : 20 commits</title></circle>
+<circle cx="675.0" cy="127" r="4.6" fill="#8250df" fill-opacity="0.34" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 505ms backwards"><title>mercredi 19 h : 7 commits</title></circle>
+<circle cx="706.3" cy="127" r="4.3" fill="#8250df" fill-opacity="0.33" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 530ms backwards"><title>mercredi 20 h : 5 commits</title></circle>
+<circle cx="737.7" cy="127" r="4.1" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 555ms backwards"><title>mercredi 21 h : 4 commits</title></circle>
+<circle cx="769.0" cy="127" r="3.6" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 580ms backwards"><title>mercredi 22 h : 2 commits</title></circle>
+<circle cx="800.3" cy="127" r="4.5" fill="#8250df" fill-opacity="0.33" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 605ms backwards"><title>mercredi 23 h : 6 commits</title></circle>
+<circle cx="79.7" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="111.0" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="153" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="153" r="4.6" fill="#8250df" fill-opacity="0.34" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 245ms backwards"><title>jeudi 8 h : 7 commits</title></circle>
+<circle cx="361.7" cy="153" r="7.7" fill="#8250df" fill-opacity="0.51" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 270ms backwards"><title>jeudi 9 h : 41 commits</title></circle>
+<circle cx="393.0" cy="153" r="9.8" fill="#8250df" fill-opacity="0.71" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 295ms backwards"><title>jeudi 10 h : 82 commits</title></circle>
+<circle cx="424.3" cy="153" r="9.3" fill="#8250df" fill-opacity="0.66" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 320ms backwards"><title>jeudi 11 h : 71 commits</title></circle>
+<circle cx="455.7" cy="153" r="8.9" fill="#8250df" fill-opacity="0.62" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 345ms backwards"><title>jeudi 12 h : 64 commits</title></circle>
+<circle cx="487.0" cy="153" r="7.3" fill="#8250df" fill-opacity="0.48" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 370ms backwards"><title>jeudi 13 h : 36 commits</title></circle>
+<circle cx="518.3" cy="153" r="9.1" fill="#8250df" fill-opacity="0.64" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 395ms backwards"><title>jeudi 14 h : 68 commits</title></circle>
+<circle cx="549.7" cy="153" r="10.3" fill="#8250df" fill-opacity="0.77" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 420ms backwards"><title>jeudi 15 h : 94 commits</title></circle>
+<circle cx="581.0" cy="153" r="10.5" fill="#8250df" fill-opacity="0.79" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 445ms backwards"><title>jeudi 16 h : 98 commits</title></circle>
+<circle cx="612.3" cy="153" r="9.1" fill="#8250df" fill-opacity="0.64" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 470ms backwards"><title>jeudi 17 h : 67 commits</title></circle>
+<circle cx="643.7" cy="153" r="7.5" fill="#8250df" fill-opacity="0.50" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 495ms backwards"><title>jeudi 18 h : 39 commits</title></circle>
+<circle cx="675.0" cy="153" r="4.6" fill="#8250df" fill-opacity="0.34" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 520ms backwards"><title>jeudi 19 h : 7 commits</title></circle>
+<circle cx="706.3" cy="153" r="4.8" fill="#8250df" fill-opacity="0.34" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 545ms backwards"><title>jeudi 20 h : 8 commits</title></circle>
+<circle cx="737.7" cy="153" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 570ms backwards"><title>jeudi 21 h : 1 commit</title></circle>
+<circle cx="769.0" cy="153" r="5.0" fill="#8250df" fill-opacity="0.35" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 595ms backwards"><title>jeudi 22 h : 10 commits</title></circle>
+<circle cx="800.3" cy="153" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 620ms backwards"><title>jeudi 23 h : 1 commit</title></circle>
+<circle cx="79.7" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="111.0" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="361.7" cy="179" r="6.8" fill="#8250df" fill-opacity="0.45" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 285ms backwards"><title>vendredi 9 h : 29 commits</title></circle>
+<circle cx="393.0" cy="179" r="7.8" fill="#8250df" fill-opacity="0.52" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 310ms backwards"><title>vendredi 10 h : 43 commits</title></circle>
+<circle cx="424.3" cy="179" r="7.1" fill="#8250df" fill-opacity="0.46" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 335ms backwards"><title>vendredi 11 h : 32 commits</title></circle>
+<circle cx="455.7" cy="179" r="8.4" fill="#8250df" fill-opacity="0.57" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 360ms backwards"><title>vendredi 12 h : 53 commits</title></circle>
+<circle cx="487.0" cy="179" r="6.5" fill="#8250df" fill-opacity="0.43" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 385ms backwards"><title>vendredi 13 h : 25 commits</title></circle>
+<circle cx="518.3" cy="179" r="7.7" fill="#8250df" fill-opacity="0.51" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 410ms backwards"><title>vendredi 14 h : 42 commits</title></circle>
+<circle cx="549.7" cy="179" r="8.4" fill="#8250df" fill-opacity="0.57" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 435ms backwards"><title>vendredi 15 h : 54 commits</title></circle>
+<circle cx="581.0" cy="179" r="7.6" fill="#8250df" fill-opacity="0.50" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 460ms backwards"><title>vendredi 16 h : 40 commits</title></circle>
+<circle cx="612.3" cy="179" r="6.4" fill="#8250df" fill-opacity="0.42" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 485ms backwards"><title>vendredi 17 h : 24 commits</title></circle>
+<circle cx="643.7" cy="179" r="7.4" fill="#8250df" fill-opacity="0.49" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 510ms backwards"><title>vendredi 18 h : 37 commits</title></circle>
+<circle cx="675.0" cy="179" r="6.4" fill="#8250df" fill-opacity="0.42" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 535ms backwards"><title>vendredi 19 h : 23 commits</title></circle>
+<circle cx="706.3" cy="179" r="7.8" fill="#8250df" fill-opacity="0.52" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 560ms backwards"><title>vendredi 20 h : 43 commits</title></circle>
+<circle cx="737.7" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="769.0" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="800.3" cy="179" r="1.5" fill="#d1d9e0"/>
+<circle cx="79.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="111.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="361.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="393.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="424.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="455.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="487.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="518.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="549.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="581.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="612.3" cy="205" r="5.2" fill="#8250df" fill-opacity="0.36" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 500ms backwards"><title>samedi 17 h : 11 commits</title></circle>
+<circle cx="643.7" cy="205" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 525ms backwards"><title>samedi 18 h : 1 commit</title></circle>
+<circle cx="675.0" cy="205" r="4.5" fill="#8250df" fill-opacity="0.33" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 550ms backwards"><title>samedi 19 h : 6 commits</title></circle>
+<circle cx="706.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="737.7" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="769.0" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="800.3" cy="205" r="1.5" fill="#d1d9e0"/>
+<circle cx="79.7" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="111.0" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="142.3" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="173.7" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="205.0" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="236.3" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="267.7" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="299.0" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="330.3" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="361.7" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="393.0" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="424.3" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="455.7" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="487.0" cy="231" r="1.5" fill="#d1d9e0"/>
+<circle cx="518.3" cy="231" r="3.3" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 440ms backwards"><title>dimanche 14 h : 1 commit</title></circle>
+<circle cx="549.7" cy="231" r="4.3" fill="#8250df" fill-opacity="0.33" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 465ms backwards"><title>dimanche 15 h : 5 commits</title></circle>
+<circle cx="581.0" cy="231" r="5.0" fill="#8250df" fill-opacity="0.35" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 490ms backwards"><title>dimanche 16 h : 10 commits</title></circle>
+<circle cx="612.3" cy="231" r="3.9" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 515ms backwards"><title>dimanche 17 h : 3 commits</title></circle>
+<circle cx="643.7" cy="231" r="4.1" fill="#8250df" fill-opacity="0.32" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 540ms backwards"><title>dimanche 18 h : 4 commits</title></circle>
+<circle cx="675.0" cy="231" r="5.3" fill="#8250df" fill-opacity="0.36" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 565ms backwards"><title>dimanche 19 h : 12 commits</title></circle>
+<circle cx="706.3" cy="231" r="4.3" fill="#8250df" fill-opacity="0.33" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 590ms backwards"><title>dimanche 20 h : 5 commits</title></circle>
+<circle cx="737.7" cy="231" r="3.6" fill="#8250df" fill-opacity="0.31" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 615ms backwards"><title>dimanche 21 h : 2 commits</title></circle>
+<circle cx="769.0" cy="231" r="5.2" fill="#8250df" fill-opacity="0.36" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 640ms backwards"><title>dimanche 22 h : 11 commits</title></circle>
+<circle cx="800.3" cy="231" r="4.9" fill="#8250df" fill-opacity="0.35" style="transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.3,1.4,.5,1) 665ms backwards"><title>dimanche 23 h : 9 commits</title></circle>
+<text x="79.7" y="262" class="m xs" text-anchor="middle">0 h</text><text x="173.7" y="262" class="m xs" text-anchor="middle">3 h</text><text x="267.7" y="262" class="m xs" text-anchor="middle">6 h</text><text x="361.7" y="262" class="m xs" text-anchor="middle">9 h</text><text x="455.7" y="262" class="m xs" text-anchor="middle">12 h</text><text x="549.7" y="262" class="m xs" text-anchor="middle">15 h</text><text x="643.7" y="262" class="m xs" text-anchor="middle">18 h</text><text x="737.7" y="262" class="m xs" text-anchor="middle">21 h</text>
+</svg>

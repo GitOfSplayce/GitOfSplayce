@@ -1,0 +1,25 @@
+{
+  "owner": "GitOfSplayce",
+  "title": "GitOfSplayce",
+  "tagline": "Le tableau de bord de nos projets, mis à jour automatiquement",
+  "timezone": "Europe/Paris",
+
+  "palette": "purple",
+
+  "exclude": ["GitOfSplayce"],
+  "includeForks": false,
+
+  "privateRepos": {
+    "showNames": true,
+    "showDescriptions": true
+  },
+
+  "team": {
+    "show": true,
+    "exclude": ["GitOfSplayce"]
+  },
+
+  "projects": {
+    "GFA": { "description": "Gestionnaire de files d'attente" }
+  }
+}
