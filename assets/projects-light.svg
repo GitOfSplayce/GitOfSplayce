@@ -17,7 +17,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
 </style>
 <rect x=".5" y=".5" width="839" height="1363" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 
-<text x="24" y="36" class="h">Projets <tspan class="m" style="font-weight:400">· 43 dépôts, dont 41 privés</tspan></text>
+<text x="24" y="36" class="h">Projets <tspan class="m" style="font-weight:400">· 43 au total, dont 41 privés</tspan></text>
 <circle cx="760.4" cy="32" r="4" fill="#59636e"/><text x="769.4" y="36" class="m s">au repos</text><circle cx="695.9" cy="32" r="4" fill="#bf8700"/><text x="704.9" y="36" class="m s">récent</text><circle cx="640.9" cy="32" r="4" fill="#1a7f37"/><text x="649.9" y="36" class="m s">actif</text>
 <text x="72" y="78" class="m xs" text-anchor="start" style="letter-spacing:.06em;font-weight:600">PROJET</text><text x="606" y="78" class="m xs" text-anchor="end" style="letter-spacing:.06em;font-weight:600">COMMITS</text><text x="622" y="78" class="m xs" text-anchor="start" style="letter-spacing:.06em;font-weight:600">SUR 6 MOIS</text><text x="816" y="78" class="m xs" text-anchor="end" style="letter-spacing:.06em;font-weight:600">DERNIER PUSH</text>
 <line x1="24" y1="88" x2="816" y2="88" stroke="#d1d9e0"/>
