@@ -27,7 +27,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/facts-dark.svg">
-  <img alt="Le saviez-vous ?" src="assets/facts-light.svg" width="100%">
+  <img alt="Faits marquants" src="assets/facts-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -35,9 +35,9 @@
   <img alt="Les projets" src="assets/projects-light.svg" width="100%">
 </picture>
 
-<p align="center"><sub>🌐 Dépôts publics : <a href="https://github.com/GitOfSplayce/gd-map">gd-map</a> · <a href="https://github.com/GitOfSplayce/LUMMEA_SONGS">LUMMEA_SONGS</a></sub></p>
+<p align="center"><sub>Dépôts publics : <a href="https://github.com/GitOfSplayce/gd-map">gd-map</a> · <a href="https://github.com/GitOfSplayce/LUMMEA_SONGS">LUMMEA_SONGS</a></sub></p>
 
-### 🧰 Stack
+### Stack
 
 <sub>Détectée automatiquement dans les manifestes (package.json, pyproject, Cargo.toml…) · le chiffre = nombre de projets</sub>
 
@@ -56,7 +56,7 @@
 **Outillage, tests & déploiement**<br>
 <img alt="GitHub Actions (20)" src="https://img.shields.io/badge/GitHub%20Actions-20-3d444d?style=flat-square&labelColor=2088FF&logo=githubactions&logoColor=white"> <img alt="Vite (12)" src="https://img.shields.io/badge/Vite-12-3d444d?style=flat-square&labelColor=646CFF&logo=vite&logoColor=white"> <img alt="Vitest (12)" src="https://img.shields.io/badge/Vitest-12-3d444d?style=flat-square&labelColor=6E9F18&logo=vitest&logoColor=white"> <img alt="Docker (10)" src="https://img.shields.io/badge/Docker-10-3d444d?style=flat-square&labelColor=2496ED&logo=docker&logoColor=white"> <img alt="pnpm (5)" src="https://img.shields.io/badge/pnpm-5-3d444d?style=flat-square&labelColor=F69220&logo=pnpm&logoColor=white"> <img alt="PM2 (3)" src="https://img.shields.io/badge/PM2-3-3d444d?style=flat-square&labelColor=2B037A&logo=pm2&logoColor=white"> <img alt="Jest (2)" src="https://img.shields.io/badge/Jest-2-3d444d?style=flat-square&labelColor=C21325&logo=jest&logoColor=white"> <img alt="Turborepo (1)" src="https://img.shields.io/badge/Turborepo-1-3d444d?style=flat-square&labelColor=EF4444&logo=turborepo&logoColor=white"> <img alt="Playwright (1)" src="https://img.shields.io/badge/Playwright-1-3d444d?style=flat-square&labelColor=2EAD33&logo=playwright&logoColor=white"> <img alt="pytest (1)" src="https://img.shields.io/badge/pytest-1-3d444d?style=flat-square&labelColor=0A9EDC&logo=pytest&logoColor=white">
 
-### 👥 L’équipe
+### L’équipe
 
 <p>
 <a href="https://github.com/Alexisbchr" title="Alexisbchr"><img src="https://avatars.githubusercontent.com/u/104722054?v=4&s=96" width="48" height="48" alt="Alexisbchr"></a>
@@ -71,7 +71,7 @@
 ---
 
 <div align="center"><sub>
-📡 Généré le 18 novembre 2026 à 10:19 à partir de 46 dépôts (dont 44 privés) ·
+Généré le 18 novembre 2026 à 10:23 à partir de 43 dépôts (dont 41 privés) ·
 <a href="scripts/generate.mjs">le script</a> · <a href=".github/workflows/update-readme.yml">le workflow</a>
 </sub></div>
 <!-- STATS:END -->
