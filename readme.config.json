@@ -1,25 +1,27 @@
 {
   "owner": "GitOfSplayce",
   "title": "GitOfSplayce",
-  "tagline": "Le tableau de bord de nos projets, mis à jour automatiquement",
+  "tagline": "Ce qu’on construit, en chiffres",
   "timezone": "Europe/Paris",
-
   "palette": "purple",
-
-  "exclude": ["GitOfSplayce"],
+  "detailedProjects": 15,
+  "exclude": [
+    "GitOfSplayce"
+  ],
   "includeForks": false,
-
   "privateRepos": {
     "showNames": true,
     "showDescriptions": true
   },
-
   "team": {
     "show": true,
-    "exclude": ["GitOfSplayce"]
+    "exclude": [
+      "GitOfSplayce"
+    ]
   },
-
   "projects": {
-    "GFA": { "description": "Gestionnaire de files d'attente" }
+    "GFA": {
+      "description": "Gestionnaire de files d'attente"
+    }
   }
 }

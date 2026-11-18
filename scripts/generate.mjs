@@ -370,7 +370,8 @@ const repos = (await listRepos()).filter(
     !CONFIG.projects?.[r.name]?.hide,
 );
 if (!repos.length) throw new Error(`Aucun dépôt visible pour ${OWNER} avec ce token.`);
-const projects = (await pool(repos, 4, collect)).sort((a, b) => b.pushedAt - a.pushedAt);
+// Les dépôts vides (aucun commit) ne comptent pas comme des projets
+const projects = (await pool(repos, 4, collect)).filter((p) => p.totalCommits > 0).sort((a, b) => b.pushedAt - a.pushedAt);
 
 // Noms affichés (anonymisation optionnelle des dépôts privés)
 {
@@ -581,7 +582,7 @@ function overviewSvg(t) {
   const body = `
 <rect width="${W}" height="4" fill="${t.accent}" clip-path="url(#card)"/>
 <text x="32" y="54" style="font-size:26px;font-weight:700">${esc(CONFIG.title ?? OWNER)}</text>
-<text x="32" y="78" class="m" style="font-size:13px">${esc(CONFIG.tagline ?? '')}</text>
+${CONFIG.tagline ? `<text x="32" y="78" class="m" style="font-size:13px">${esc(CONFIG.tagline)}</text>` : ''}
 <text x="${W - 32}" y="52" class="m s" text-anchor="end">mis à jour le ${esc(updated)}</text>
 <line x1="32" y1="104" x2="${W - 32}" y2="104" stroke="${t.border}"/>
 ${tiles
@@ -724,19 +725,34 @@ for (const p of projects) {
   p.sparkTotal = p.spark.reduce((a, b) => a + b, 0);
 }
 
+// Pictos : Feather Icons (MIT, https://feathericons.com), dessinés en trait sur une grille 24×24
+const ICONS = {
+  moon: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+  coffee: '<path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>',
+  calendar: '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+  zap: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
+  activity: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+  trendingUp: '<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>',
+  award: '<circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>',
+  cpu: '<rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>',
+  checkCircle: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>',
+};
+const icon = (name, cx, cy, size, color) =>
+  `<g transform="translate(${cx - size / 2} ${cy - size / 2}) scale(${size / 24})" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]}</g>`;
+
 function factTiles() {
   const f = facts;
   const o = f.oldest;
   return [
-    { icon: '🌙', value: pct(f.nightPct), label: 'des commits la nuit', sub: 'entre 22 h et 6 h' },
-    { icon: '🛋️', value: pct(f.weekendPct), label: 'des commits le week-end', sub: 'samedi et dimanche' },
-    { icon: '📅', value: DAYS[f.peakDow], label: 'jour le plus productif', sub: `pic d’activité vers ${f.peakHour} h` },
-    f.record.key && { icon: '🔥', value: plural(f.record.count, 'commit'), label: 'en une seule journée', sub: `le ${frDate(f.record.key)}` },
-    f.longest > 1 && { icon: '📈', value: plural(f.longest, 'jour'), label: 'de série record', sub: 'au moins un commit par jour' },
-    f.hotProject && { icon: '🚀', value: f.hotProject.p.display, label: 'projet le plus actif', sub: `${plural(f.hotProject.n, 'commit')} en 30 jours` },
-    { icon: '🏛️', value: o.display, label: 'le doyen des projets', sub: `lancé en ${MONTHS[o.createdAt.getMonth()]} ${o.createdAt.getFullYear()}` },
-    f.agentReady && { icon: '🤖', value: `${f.agentReady} / ${stats.projects}`, label: 'projets prêts pour l’IA', sub: 'CLAUDE.md ou AGENTS.md' },
-    f.testFiles && { icon: '🧪', value: fmt(f.testFiles), label: 'fichiers de tests', sub: `sur ${fmt(f.files)} fichiers au total` },
+    { icon: 'moon', value: pct(f.nightPct), label: 'des commits la nuit', sub: 'entre 22 h et 6 h' },
+    { icon: 'coffee', value: pct(f.weekendPct), label: 'des commits le week-end', sub: 'samedi et dimanche' },
+    { icon: 'calendar', value: DAYS[f.peakDow], label: 'jour le plus productif', sub: `pic d’activité vers ${f.peakHour} h` },
+    f.record.key && { icon: 'zap', value: plural(f.record.count, 'commit'), label: 'en une seule journée', sub: `le ${frDate(f.record.key)}` },
+    f.longest > 1 && { icon: 'activity', value: plural(f.longest, 'jour'), label: 'de série record', sub: 'au moins un commit par jour' },
+    f.hotProject && { icon: 'trendingUp', value: f.hotProject.p.display, label: 'projet le plus actif', sub: `${plural(f.hotProject.n, 'commit')} en 30 jours` },
+    { icon: 'award', value: o.display, label: 'le doyen des projets', sub: `lancé en ${MONTHS[o.createdAt.getMonth()]} ${o.createdAt.getFullYear()}` },
+    f.agentReady && { icon: 'cpu', value: `${f.agentReady} / ${stats.projects}`, label: 'projets prêts pour l’IA', sub: 'CLAUDE.md ou AGENTS.md' },
+    f.testFiles && { icon: 'checkCircle', value: fmt(f.testFiles), label: 'fichiers de tests', sub: `sur ${fmt(f.files)} fichiers au total` },
   ].filter(Boolean);
 }
 
@@ -753,7 +769,7 @@ function factsSvg(t) {
       return `<g style="animation:fade .6s ease-out ${i * 70}ms backwards">
   <rect x="${x}" y="${y}" width="${tw}" height="${th}" rx="10" fill="${t.tile}" stroke="${t.border}" stroke-opacity=".6"/>
   <circle cx="${x + 32}" cy="${y + th / 2}" r="19" fill="${t.accent}" fill-opacity=".12"/>
-  <text x="${x + 32}" y="${y + th / 2 + 6.5}" text-anchor="middle" class="emoji">${it.icon}</text>
+  ${icon(it.icon, x + 32, y + th / 2, 20, t.accent)}
   <text x="${tx}" y="${y + 38}" style="font-size:${vs}px;font-weight:700">${esc(it.value)}</text>
   <text x="${tx}" y="${y + 58}" style="font-size:12.5px;font-weight:600"${fit(it.label, 12.5, avail, true)}>${esc(it.label)}</text>
   <text x="${tx}" y="${y + 76}" class="m xs"${fit(it.sub, 11, avail)}>${esc(it.sub)}</text>
@@ -761,11 +777,10 @@ function factsSvg(t) {
     })
     .join('\n');
   const body = `
-<text x="24" y="36" class="h">Le saviez-vous ?</text>
+<text x="24" y="36" class="h">Faits marquants</text>
 <text x="${W - 24}" y="36" class="m s" text-anchor="end">sur les 12 derniers mois, tous projets confondus</text>
 ${tiles}`;
-  return frame(t, y0 + rows * (th + gap) - gap + 24, 'Le saviez-vous ?', body,
-    `.emoji{font-size:18px;font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif}`);
+  return frame(t, y0 + rows * (th + gap) - gap + 24, 'Faits marquants', body);
 }
 
 const STATUS = {
@@ -814,6 +829,13 @@ const globeIcon = (x, y, c) =>
 
 function projectsSvg(t) {
   const top = 96, rowH = 56;
+  // Les N projets poussés le plus récemment ont une ligne détaillée ; tous les autres
+  // restent listés, en grille compacte sous le tableau.
+  const shown = projects.slice(0, Math.max(1, CONFIG.detailedProjects ?? 15));
+  const rest = projects.slice(shown.length);
+  const G = { cols: 3, h: 30, gap: 6 };
+  const restTop = top + shown.length * rowH + 12;
+  const restH = rest.length ? 46 + Math.ceil(rest.length / G.cols) * (G.h + G.gap) - G.gap : 0;
   const COL = { name: 72, commits: 606, spark: 622, push: W - 24 };
   const step = 4.4, sh = 24;
 
@@ -828,7 +850,7 @@ function projectsSvg(t) {
     })
     .join('');
 
-  const rows = projects
+  const rows = shown
     .map((p, i) => {
       const y = top + i * rowH, mid = y + rowH / 2;
       const st = statusOf(p), sc = STATUS[st].color(t);
@@ -863,8 +885,30 @@ ${pills(stackOf(p), COL.name, y + 30, t)}
 ${legend}
 ${head(COL.name, 'PROJET')}${head(COL.commits, 'COMMITS', 'end')}${head(COL.spark, 'SUR 6 MOIS')}${head(COL.push, 'DERNIER PUSH', 'end')}
 <line x1="24" y1="${top - 8}" x2="${W - 24}" y2="${top - 8}" stroke="${t.border}"/>
-${rows}`;
-  return frame(t, top + projects.length * rowH + 16, `${stats.projects} projets`, body,
+${rows}
+${rest.length ? (() => {
+  const commits = rest.reduce((a, p) => a + p.totalCommits, 0);
+  const cw = (W - 48 - G.gap * (G.cols - 1)) / G.cols;
+  const cells = rest
+    .map((p, i) => {
+      const x = 24 + (i % G.cols) * (cw + G.gap), y = restTop + 46 + Math.floor(i / G.cols) * (G.h + G.gap), cy = y + G.h / 2;
+      const when = relative(p.pushedAt);
+      const name = truncate(p.display, 13, cw - 42 - textWidth(when, 11) - 20, true);
+      return `<g style="animation:fade .5s ease-out ${300 + i * 20}ms backwards">
+<rect x="${x.toFixed(1)}" y="${y}" width="${cw.toFixed(1)}" height="${G.h}" rx="8" fill="${t.tile}"/>
+<circle cx="${(x + 13).toFixed(1)}" cy="${cy}" r="3.5" fill="${STATUS[statusOf(p)].color(t)}"/>
+${p.private ? lockIcon(+(x + 22).toFixed(1), cy - 7, t.muted) : globeIcon(+(x + 22).toFixed(1), cy - 7, t.accent)}
+<text x="${(x + 40).toFixed(1)}" y="${cy + 4.5}" style="font-size:13px;font-weight:600">${esc(name)}<title>${esc(`${p.display} · ${plural(p.totalCommits, 'commit')}`)}</title></text>
+<text x="${(x + cw - 12).toFixed(1)}" y="${cy + 4}" text-anchor="end" class="m xs">${when}</text>
+</g>`;
+    })
+    .join('\n');
+  return `<line x1="24" y1="${restTop}" x2="${W - 24}" y2="${restTop}" stroke="${t.border}" stroke-dasharray="3 4"/>
+${head(24, 'AUTRES PROJETS').replace('y="78"', `y="${restTop + 28}"`)}
+<text x="${W - 24}" y="${restTop + 28}" text-anchor="end" class="m xs">${esc(`${plural(rest.length, 'dépôt')} · ${plural(commits, 'commit')}`)}</text>
+${cells}`;
+})() : ''}`;
+  return frame(t, top + shown.length * rowH + (rest.length ? 12 + restH : 0) + 16, `${stats.projects} projets`, body,
     `@keyframes rise{from{transform:scaleY(0)}}
 @keyframes pulse{0%{transform:scale(1);opacity:.45}70%,100%{transform:scale(2.8);opacity:0}}
 .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-out infinite}`);
@@ -891,7 +935,7 @@ function badge(tech, count) {
 function publicLinks() {
   const pub = projects.filter((p) => !p.private);
   if (!pub.length) return '';
-  return `<p align="center"><sub>🌐 Dépôts publics : ${pub.map((p) => `<a href="${p.url}">${esc(p.display)}</a>`).join(' · ')}</sub></p>\n`;
+  return `<p align="center"><sub>Dépôts publics : ${pub.map((p) => `<a href="${p.url}">${esc(p.display)}</a>`).join(' · ')}</sub></p>\n`;
 }
 
 function stackSection() {
@@ -915,7 +959,7 @@ function teamSection() {
       return `<a href="${m.url}" title="${esc(m.login)}"><img src="${src}" width="48" height="48" alt="${esc(m.login)}"></a>`;
     })
     .join('\n');
-  return `### 👥 L’équipe\n\n<p>\n${avatars}\n</p>\n`;
+  return `### L’équipe\n\n<p>\n${avatars}\n</p>\n`;
 }
 
 const generatedAt = new Intl.DateTimeFormat('fr-FR', { timeZone: TZ, dateStyle: 'long', timeStyle: 'short' }).format(NOW);
@@ -931,12 +975,12 @@ ${pic('languages', 'Répartition des langages')}
 
 ${pic('habits', 'Rythme de commit')}
 
-${pic('facts', 'Le saviez-vous ?')}
+${pic('facts', 'Faits marquants')}
 
 ${pic('projects', 'Les projets')}
 
 ${publicLinks()}
-### 🧰 Stack
+### Stack
 
 <sub>Détectée automatiquement dans les manifestes (package.json, pyproject, Cargo.toml…) · le chiffre = nombre de projets</sub>
 
@@ -945,7 +989,7 @@ ${teamSection()}
 ---
 
 <div align="center"><sub>
-📡 Généré le ${esc(generatedAt)} à partir de ${plural(stats.projects, 'dépôt')} (dont ${fmt(stats.privateCount)} privés) ·
+Généré le ${esc(generatedAt)} à partir de ${plural(stats.projects, 'dépôt')} (dont ${fmt(stats.privateCount)} privés) ·
 <a href="scripts/generate.mjs">le script</a> · <a href=".github/workflows/update-readme.yml">le workflow</a>
 </sub></div>`;
 
