@@ -362,9 +362,10 @@ async function collect(r) {
 
 console.log(`→ Dépôts de ${OWNER}…`);
 const excluded = new Set((CONFIG.exclude ?? []).map((s) => s.toLowerCase()));
-const repos = (await listRepos()).filter(
+// Tous les dépôts du compte (le chiffre affiché par GitHub), avant filtrage
+const owned = (await listRepos()).filter((r) => r.owner.login.toLowerCase() === OWNER.toLowerCase());
+const repos = owned.filter(
   (r) =>
-    r.owner.login.toLowerCase() === OWNER.toLowerCase() &&
     !excluded.has(r.name.toLowerCase()) &&
     (CONFIG.includeForks || !r.fork) &&
     !CONFIG.projects?.[r.name]?.hide,
@@ -419,6 +420,7 @@ const teamShown = humans.filter((t) => !teamExclude.has(t.login.toLowerCase())).
 const stats = {
   projects: projects.length,
   privateCount: projects.filter((p) => p.private).length,
+  allRepos: owned.length,
   commits: projects.reduce((a, p) => a + p.totalCommits, 0),
   yearCommits: yearDates.length,
   contributors: teamShown.length || humans.length,
@@ -571,14 +573,23 @@ function overviewSvg(t) {
   const h = 206;
   const updated = frDate(today.key, true);
   const tiles = [
-    [fmt(stats.projects), 'projets', `dont ${fmt(stats.privateCount)} privés`],
+    [
+      fmt(stats.projects),
+      'projets',
+      stats.allRepos > stats.projects
+        ? `dont ${fmt(stats.privateCount)} privés · sur ${fmt(stats.allRepos)} dépôts`
+        : `dont ${fmt(stats.privateCount)} privés`,
+    ],
     [fmt(stats.commits), 'commits', `depuis ${stats.since}`],
     [fmt(stats.yearCommits), 'commits', 'sur 12 mois'],
     [fmt(stats.active), 'projets actifs', 'push < 30 jours'],
     [mo(stats.bytes), 'de code', `en ${stats.languages} langages`],
     [fmt(stats.contributors), 'contributeurs', 'humains'],
   ];
-  const tw = (W - 64) / tiles.length;
+  // Chaque tuile prend la largeur de son contenu ; l'espace restant est réparti entre elles
+  const widths = tiles.map(([v, l, s]) => Math.max(textWidth(v, 27, true), textWidth(l, 13, true), textWidth(s, 11)));
+  const gap = Math.max(16, (W - 64 - widths.reduce((a, b) => a + b, 0)) / (tiles.length - 1));
+  const xs = widths.map((_, i) => 32 + widths.slice(0, i).reduce((a, b) => a + b + gap, 0));
   const body = `
 <rect width="${W}" height="4" fill="${t.accent}" clip-path="url(#card)"/>
 <text x="32" y="54" style="font-size:26px;font-weight:700">${esc(CONFIG.title ?? OWNER)}</text>
@@ -588,9 +599,9 @@ ${CONFIG.tagline ? `<text x="32" y="78" class="m" style="font-size:13px">${esc(C
 ${tiles
   .map(
     ([v, l, s], i) => `<g style="animation:fade .6s ease-out ${i * 80}ms backwards">
-  <text x="${32 + i * tw}" y="148" style="font-size:27px;font-weight:700">${esc(v)}</text>
-  <text x="${32 + i * tw}" y="170" style="font-size:13px;font-weight:600">${esc(l)}</text>
-  <text x="${32 + i * tw}" y="188" class="m xs">${esc(s)}</text>
+  <text x="${xs[i].toFixed(1)}" y="148" style="font-size:27px;font-weight:700">${esc(v)}</text>
+  <text x="${xs[i].toFixed(1)}" y="170" style="font-size:13px;font-weight:600">${esc(l)}</text>
+  <text x="${xs[i].toFixed(1)}" y="188" class="m xs">${esc(s)}</text>
 </g>`,
   )
   .join('\n')}`;
@@ -881,7 +892,7 @@ ${pills(stackOf(p), COL.name, y + 30, t)}
   const head = (x, label, anchor = 'start') =>
     `<text x="${x}" y="78" class="m xs" text-anchor="${anchor}" style="letter-spacing:.06em;font-weight:600">${label}</text>`;
   const body = `
-<text x="24" y="36" class="h">Projets <tspan class="m" style="font-weight:400">· ${plural(stats.projects, 'dépôt')}, dont ${fmt(stats.privateCount)} privés</tspan></text>
+<text x="24" y="36" class="h">Projets <tspan class="m" style="font-weight:400">· ${fmt(stats.projects)} au total, dont ${fmt(stats.privateCount)} privés</tspan></text>
 ${legend}
 ${head(COL.name, 'PROJET')}${head(COL.commits, 'COMMITS', 'end')}${head(COL.spark, 'SUR 6 MOIS')}${head(COL.push, 'DERNIER PUSH', 'end')}
 <line x1="24" y1="${top - 8}" x2="${W - 24}" y2="${top - 8}" stroke="${t.border}"/>
@@ -989,7 +1000,7 @@ ${teamSection()}
 ---
 
 <div align="center"><sub>
-Généré le ${esc(generatedAt)} à partir de ${plural(stats.projects, 'dépôt')} (dont ${fmt(stats.privateCount)} privés) ·
+Généré le ${esc(generatedAt)} à partir des ${fmt(stats.allRepos)} dépôts du compte ·
 <a href="scripts/generate.mjs">le script</a> · <a href=".github/workflows/update-readme.yml">le workflow</a>
 </sub></div>`;
 
