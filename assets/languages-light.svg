@@ -16,17 +16,17 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
 <rect x=".5" y=".5" width="839" height="151" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 
 <text x="24" y="36" class="h">Langages</text>
-<text x="816" y="36" class="m s" text-anchor="end">52,1 Mo de code · 23 langages · 43 projets</text>
+<text x="816" y="36" class="m s" text-anchor="end">54,1 Mo de code · 23 langages · 43 projets</text>
 <clipPath id="bar"><rect x="24" y="58" width="792" height="10" rx="5"/></clipPath>
-<g clip-path="url(#bar)"><g style="transform-origin:24px 0;animation:grow 1s cubic-bezier(.2,.8,.2,1) backwards"><rect x="24.00" y="58" width="448.74" height="10" fill="#3178c6"/><rect x="472.74" y="58" width="87.78" height="10" fill="#f1e05a"/><rect x="560.51" y="58" width="71.06" height="10" fill="#f34b7d"/><rect x="631.58" y="58" width="51.03" height="10" fill="#3572A5"/><rect x="682.61" y="58" width="41.23" height="10" fill="#e34c26"/><rect x="723.84" y="58" width="20.12" height="10" fill="#663399"/><rect x="743.96" y="58" width="17.84" height="10" fill="#41b883"/><rect x="761.80" y="58" width="17.10" height="10" fill="#4F5D95"/><rect x="778.90" y="58" width="12.41" height="10" fill="#dea584"/><rect x="791.31" y="58" width="24.69" height="10" fill="#d1d9e0"/></g></g>
-<circle cx="29" cy="96" r="5" fill="#3178c6"/><text x="40" y="100" style="font-size:13px">TypeScript <tspan class="m s">57 %</tspan></text>
+<g clip-path="url(#bar)"><g style="transform-origin:24px 0;animation:grow 1s cubic-bezier(.2,.8,.2,1) backwards"><rect x="24.00" y="58" width="444.28" height="10" fill="#3178c6"/><rect x="468.28" y="58" width="85.28" height="10" fill="#f1e05a"/><rect x="553.56" y="58" width="68.42" height="10" fill="#f34b7d"/><rect x="621.98" y="58" width="60.79" height="10" fill="#3572A5"/><rect x="682.77" y="58" width="39.73" height="10" fill="#e34c26"/><rect x="722.50" y="58" width="20.12" height="10" fill="#663399"/><rect x="742.62" y="58" width="18.81" height="10" fill="#4F5D95"/><rect x="761.43" y="58" width="18.56" height="10" fill="#41b883"/><rect x="779.99" y="58" width="12.24" height="10" fill="#dea584"/><rect x="792.23" y="58" width="23.77" height="10" fill="#d1d9e0"/></g></g>
+<circle cx="29" cy="96" r="5" fill="#3178c6"/><text x="40" y="100" style="font-size:13px">TypeScript <tspan class="m s">56 %</tspan></text>
 <circle cx="187.4" cy="96" r="5" fill="#f1e05a"/><text x="198.4" y="100" style="font-size:13px">JavaScript <tspan class="m s">11 %</tspan></text>
-<circle cx="345.8" cy="96" r="5" fill="#f34b7d"/><text x="356.8" y="100" style="font-size:13px">C++ <tspan class="m s">9 %</tspan></text>
-<circle cx="504.20000000000005" cy="96" r="5" fill="#3572A5"/><text x="515.2" y="100" style="font-size:13px">Python <tspan class="m s">6,4 %</tspan></text>
-<circle cx="662.6" cy="96" r="5" fill="#e34c26"/><text x="673.6" y="100" style="font-size:13px">HTML <tspan class="m s">5,2 %</tspan></text>
+<circle cx="345.8" cy="96" r="5" fill="#f34b7d"/><text x="356.8" y="100" style="font-size:13px">C++ <tspan class="m s">8,6 %</tspan></text>
+<circle cx="504.20000000000005" cy="96" r="5" fill="#3572A5"/><text x="515.2" y="100" style="font-size:13px">Python <tspan class="m s">7,7 %</tspan></text>
+<circle cx="662.6" cy="96" r="5" fill="#e34c26"/><text x="673.6" y="100" style="font-size:13px">HTML <tspan class="m s">5 %</tspan></text>
 <circle cx="29" cy="120" r="5" fill="#663399"/><text x="40" y="124" style="font-size:13px">CSS <tspan class="m s">2,5 %</tspan></text>
-<circle cx="187.4" cy="120" r="5" fill="#41b883"/><text x="198.4" y="124" style="font-size:13px">Vue <tspan class="m s">2,3 %</tspan></text>
-<circle cx="345.8" cy="120" r="5" fill="#4F5D95"/><text x="356.8" y="124" style="font-size:13px">PHP <tspan class="m s">2,2 %</tspan></text>
-<circle cx="504.20000000000005" cy="120" r="5" fill="#dea584"/><text x="515.2" y="124" style="font-size:13px">Rust <tspan class="m s">1,6 %</tspan></text>
-<circle cx="662.6" cy="120" r="5" fill="#d1d9e0"/><text x="673.6" y="124" style="font-size:13px">Autres <tspan class="m s">3,1 %</tspan></text>
+<circle cx="187.4" cy="120" r="5" fill="#4F5D95"/><text x="198.4" y="124" style="font-size:13px">PHP <tspan class="m s">2,4 %</tspan></text>
+<circle cx="345.8" cy="120" r="5" fill="#41b883"/><text x="356.8" y="124" style="font-size:13px">Vue <tspan class="m s">2,3 %</tspan></text>
+<circle cx="504.20000000000005" cy="120" r="5" fill="#dea584"/><text x="515.2" y="124" style="font-size:13px">Rust <tspan class="m s">1,5 %</tspan></text>
+<circle cx="662.6" cy="120" r="5" fill="#d1d9e0"/><text x="673.6" y="124" style="font-size:13px">Autres <tspan class="m s">3 %</tspan></text>
 </svg>

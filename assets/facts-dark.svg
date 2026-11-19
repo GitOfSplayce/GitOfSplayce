@@ -21,7 +21,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
   <rect x="24" y="56" width="256" height="92" rx="10" fill="#151b23" stroke="#3d444d" stroke-opacity=".6"/>
   <circle cx="56" cy="102" r="19" fill="#a371f7" fill-opacity=".12"/>
   <g transform="translate(46 92) scale(0.8333333333333334)" fill="none" stroke="#a371f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></g>
-  <text x="86" y="94" style="font-size:22px;font-weight:700">2,2 %</text>
+  <text x="86" y="94" style="font-size:22px;font-weight:700">2,1 %</text>
   <text x="86" y="114" style="font-size:12.5px;font-weight:600">des commits la nuit</text>
   <text x="86" y="132" class="m xs">entre 22 h et 6 h</text>
 </g>
@@ -29,7 +29,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
   <rect x="292" y="56" width="256" height="92" rx="10" fill="#151b23" stroke="#3d444d" stroke-opacity=".6"/>
   <circle cx="324" cy="102" r="19" fill="#a371f7" fill-opacity=".12"/>
   <g transform="translate(314 92) scale(0.8333333333333334)" fill="none" stroke="#a371f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></g>
-  <text x="354" y="94" style="font-size:22px;font-weight:700">2,2 %</text>
+  <text x="354" y="94" style="font-size:22px;font-weight:700">2,1 %</text>
   <text x="354" y="114" style="font-size:12.5px;font-weight:600">des commits le week-end</text>
   <text x="354" y="132" class="m xs">samedi et dimanche</text>
 </g>
@@ -63,7 +63,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
   <g transform="translate(582 196) scale(0.8333333333333334)" fill="none" stroke="#a371f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></g>
   <text x="622" y="198" style="font-size:22px;font-weight:700">lummea-play</text>
   <text x="622" y="218" style="font-size:12.5px;font-weight:600">projet le plus actif</text>
-  <text x="622" y="236" class="m xs">417 commits en 30 jours</text>
+  <text x="622" y="236" class="m xs">472 commits en 30 jours</text>
 </g>
 <g style="animation:fade .6s ease-out 420ms backwards">
   <rect x="24" y="264" width="256" height="92" rx="10" fill="#151b23" stroke="#3d444d" stroke-opacity=".6"/>
@@ -85,8 +85,8 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
   <rect x="560" y="264" width="256" height="92" rx="10" fill="#151b23" stroke="#3d444d" stroke-opacity=".6"/>
   <circle cx="592" cy="310" r="19" fill="#a371f7" fill-opacity=".12"/>
   <g transform="translate(582 300) scale(0.8333333333333334)" fill="none" stroke="#a371f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></g>
-  <text x="622" y="302" style="font-size:22px;font-weight:700">865</text>
+  <text x="622" y="302" style="font-size:22px;font-weight:700">897</text>
   <text x="622" y="322" style="font-size:12.5px;font-weight:600">fichiers de tests</text>
-  <text x="622" y="340" class="m xs">sur 10 101 fichiers au total</text>
+  <text x="622" y="340" class="m xs">sur 10 324 fichiers au total</text>
 </g>
 </svg>
