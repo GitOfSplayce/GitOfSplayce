@@ -71,7 +71,7 @@
 ---
 
 <div align="center"><sub>
-Généré le 22 novembre 2026 à 13:42 à partir des 47 dépôts du compte ·
+Généré le 23 novembre 2026 à 15:58 à partir des 47 dépôts du compte ·
 <a href="scripts/generate.mjs">le script</a> · <a href=".github/workflows/update-readme.yml">le workflow</a>
 </sub></div>
 <!-- STATS:END -->
